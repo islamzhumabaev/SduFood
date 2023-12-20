@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+body {
+    background: url('../img/food-frame-with-asian-dish.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Ubuntu';
+}
+
+.taskbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(223, 178, 82);
+    width: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 50px 0;
+}
+
+.taskbar a {
+    text-decoration: none;
+    color: white;
+    margin: 30px 0;
+    transition: background-color 0.3s ease;
+}
+
+.taskbar a img {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: auto;
+}
+
+.taskbar a:hover {
+    background-color: rgb(164, 0, 0);
+    border-radius: 10%;
+}
+
+.header {
+    margin: 0 0 0 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.block {
+    padding: 0 8px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.header_logo {
+    display: flex;
+    align-items: center;
+}
+
+.header_logo img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.header_logo .text {
+    font-size: 2rem;
+}
+
+.header__money {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    padding: 2px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15%;
+    width: 18%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.header__money img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.username,
+.money {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px;
+    margin: 0 0 0 36px;
+}
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    width: 300px;
+}
+.product img {
+    width: 80%;
+    height: auto;
+}
+.product-details {
+    padding: 15px;
+}
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.product-price {
+    color: #e44d26;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.counter-container {
+    text-align: center;
+  }
+
+  .counter {
+    font-size: 24px;
+    margin: 0 10px;
+  }
+
+  .button {
+    font-size: 18px;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 4px;
+    margin: 0 5px;
+  }
+
+  .button:hover {
+    background-color: #2980b9;
+  }
+.content{
+    margin: 0 0 0 1%;
+}
+
+.my-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #bd2612;
+    border-radius: 5px;
+    color: white;
+    background-color: #bd2612;
+    transition: font-size 0.3s, color 0.3s;
+    margin: 0 0 0 36px;
+  }
+
+  .my-button:hover {
+    background-color: #bd2612;
+    color: #63adcc;
+    font-size: 18px;
+  }
+
+  .center{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 0 0 65px;
+  }
+
+
+
+  .cart-container {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    background-color: white;
+    color: black;
+    width: 100%;
+    max-width: 200px; 
+    margin: 10px auto;
+}
+
+.cart-item {
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.gotovo {
+    max-width: 100%;
+    margin: 10px auto;
+}
+
+.product-block {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+.product-image {
+    max-width: 30%;
+    height: auto;
+}
+
+.div0 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px;
+}
+
+.div0 div {
+    flex: 0 0 calc(50% - 10px);
+    box-sizing: border-box;
+    padding: 2px;
+    border: 1px solid #ccc;
+    margin: 5px;
+    width: 100%;
+    align-items: center;
+}
+
+.div1 {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bjjkjk {
+    padding: 10px 20px;
+      background-color: green;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: font-size 0.3s ease;
+}
+.bjjkjk:hover {
+    font-size: 18px;
+  }
+
+  .delete-button1 {
+    padding: 2px 8px;
+      background-color: #bd2612;
+      color: #fff;
+      font-size: 15px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+@media only screen and (min-width: 600px) {
+    .div0 div {
+        flex: 0 0 calc(33.33% - 10px);
+        width: 100%; 
+    }
+}
+@media screen and (max-width: 910px) {
+    body {
+        background: url('../img/food-frame-with-asian-dish.jpg');
+        background-size: cover;
+        height: 100vh;
+        margin: 0;
+        overflow-x: hidden;
+        font-family: 'Ubuntu';
+    }
+    .header__money {
+        display: flex;
+        flex-direction: row;
+        color: black;
+        padding: 10px;
+        width: 20%;
+        
+        box-sizing: border-box;
+
+    }
+    .header {
+        margin: 0 2% 0 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .block {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .header__money {
+        margin-top: 10px;
+    }
+    .header_logo img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+    .header_logo .text {
+        font-size: 1rem;
+    }
+    .header__money img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    .username,
+    .money {
+        font-size: 1.0rem;
+        margin-bottom: 2px;
+}
+}
+@media screen and (max-width: 395px) {
+    body {
+        background: url('../img/food-frame-with-asian-dish.jpg');
+        background-size: cover;
+        height: 100vh;
+        margin: 0;
+        overflow-x: hidden;
+        font-family: 'Ubuntu';
+    }
+    .taskbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 55px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        padding: 50px 0;
+    }
+    .header {
+        margin: 0 0 0 13%;
+        display: flex;
+        align-items: center;
+        color: black;
+        padding: 4px;
+    }
+    .header__money {
+        border: 1px solid white;
+        background-color: white;
+    }
+
+    .header_logo img {
+        margin-right: 0;
+    }
+
+    .header__money img {
+        width: 13px;
+        height: 13px;
+        margin-right: 0px;
+    }
+    .header_logo img {
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+    }
+    .header_logo .text {
+        font-size: 0.8rem;
+    }
+    .username,
+    .money {
+        font-size: 0.6rem;
+        margin-bottom: 2px;
+    }
+    .center{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 0 0 36px;
+      }
+
+}
+@media screen and (max-width: 700px) {
+    body {
+        background: url('../img/food-frame-with-asian-dish.jpg');
+        background-size: cover;
+        height: 100vh;
+        margin: 0;
+        overflow-x: hidden;
+        font-family: 'Ubuntu';
+    }
+    .taskbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 37px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        padding: 50px 0;
+    }
+    .taskbar a img {
+        width: 20px;
+        height: 20px;
+        display: block;
+        margin: auto;
+    }
+    .header {
+        margin: 0 0% 0 11%;
+        display: flex;
+        align-items: center;
+        color: white;
+        padding: 4px;
+    }
+    .header__money {
+        border: 1px solid white;
+    }
+
+    .header_logo img {
+        margin-right: 0;
+    }
+
+    .header__money img {
+        width: 10px;
+        height: 10px;
+        margin-right: 0px;
+    }
+    .header_logo img {
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+    }
+    .header_logo .text {
+        font-size: 0.8rem;
+    }
+    .username,
+    .money {
+        font-size: 0.6rem;
+        margin-bottom: 2px;
+    }
+}

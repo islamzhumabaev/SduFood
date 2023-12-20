@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssko/bakery.css">
+    <title>SDUFood</title>
+</head>
+<body>
+    <div class="container">
+        <div class="taskbar">
+            <a href="drinks.html" class="profile"><img src="img/free-icon-cocktail-3366865.png" alt=""></a>
+            <a href="" class="buy"><img src="img/free-icon-pie-8549363.png" alt=""></a>
+            <a href="fast.html" class="sell"><img src="img/free-icon-burger-5787016.png" alt=""></a>
+            <a href="korzina.html" class="info"><img src="img/free-icon-cart-891419.png" alt=""></a>
+            <a href="gotovo.html" class="home"><img src="img/free-icon-hourglass-8590177.png" alt=""></a>
+            <a href="index.html" class="home"><img src="img/free-icon-logout-1828490.png" alt=""></a>
+        </div>
+        <div class="content">
+            <div class="header">
+                <div class="header_logo">
+                    <img src="img/free-icon-booth-9778850.png" alt="">
+                    <div class="text">SDU <br> Food</div>
+                </div>
+                <div class="header__money">
+                    <img src="img/free-icon-boss-265674.png" alt="">
+                    <div class="block">
+                        <div class="username">SDU</div>
+                        <div class="money">&#129689 <span id="akwa1">∞</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="center">
+                <div class="product-container">
+                    <div class="product">
+                        <img src="img/napo.jpg" alt="Product 1">
+                        <div class="product-details">
+                            <div class="product-title">Napoleon</div>
+                            <div class="product-price">350tg</div>
+                            <div id="quantity2" class="product-price">0</div>
+                        </div>
+                        <div class="counter-container">
+                            <button class="button" id="decrementButton3">-</button>
+                            <span class="counter" id="count3">0</span>
+                            <button class="button" id="incrementButton3">+</button>
+                        </div>
+                        <br>
+                    </div>
+            
+                    <div class="product">
+                        <img src="img/choco.jpg" alt="Product 2">
+                        <div class="product-details">
+                            <div class="product-title">Chocolate cake</div>
+                            <div class="product-price">300tg</div>
+                            <div id="quantity3" class="product-price">0</div>
+                        </div>
+                        <div class="counter-container">
+                            <button class="button" id="decrementButton4">-</button>
+                            <span class="counter" id="count4">0</span>
+                            <button class="button" id="incrementButton4">+</button>
+                          </div>
+                          <br>
+                    </div>
+            
+                    <div class="product">
+                        <img src="img/vupi.png" alt="Product 3">
+                        <div class="product-details">
+                            <div class="product-title">Vupi Pie</div>
+                            <div class="product-price">500tg</div>
+                            <div id="quantity4" class="product-price">0</div>
+                        </div>
+                        <div class="counter-container">
+                            <button class="button" id="decrementButton5">-</button>
+                            <span class="counter" id="count5">0</span>
+                            <button class="button" id="incrementButton5">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <a id="sub2" href="#" class="my-button">to Basket</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const data=JSON.parse(localStorage.getItem('adminObj'));
+        const a=data[1].quantity;
+        document.getElementById('quantity2').innerText = a +' things';
+
+        const a1=data[2].quantity;
+        document.getElementById('quantity3').innerText = a1 +' things';
+
+        const a2=data[3].quantity;
+        document.getElementById('quantity4').innerText = a2 +' things';
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
